@@ -1,5 +1,5 @@
 import navItems, { NavItemTYPE } from './navItems';
-import { StyledNavbar, NavList, NavListItem, NavListItemIcon } from './styles';
+import { NavList, NavListItem, NavListItemIcon, StyledNavbar } from './styles';
 
 const Navbar: React.FC = () => {
     return (

@@ -12,16 +12,24 @@ const commonTheme = {
             yellow: 'rgba(249, 201, 84, 1)'
         },
         error: {
-            main: 'rgba(211, 47, 47, 1)'
+            light: 'rgba(211, 47, 47, 1)',
+            main: 'rgba(211, 47, 47, 1)',
+            dark: 'rgba(211, 47, 47, 1)'
         },
         warning: {
-            main: 'rgba(255, 160, 0, 1)'
+            light: 'rgba(255, 160, 0, 1)',
+            main: 'rgba(255, 160, 0, 1)',
+            dark: 'rgba(255, 160, 0, 1)'
         },
         info: {
-            main: 'rgba(25, 118, 210, 1)'
+            light: 'rgba(25, 118, 210, 1)',
+            main: 'rgba(25, 118, 210, 1)',
+            dark: 'rgba(25, 118, 210, 1)'
         },
         success: {
-            main: 'rgba(67, 160, 71, 1)'
+            light: 'rgba(67, 160, 71, 1)',
+            main: 'rgba(67, 160, 71, 1)',
+            dark: 'rgba(67, 160, 71, 1)'
         },
         grey: {
             [50]: '#fafafa',
@@ -42,7 +50,8 @@ const commonTheme = {
     },
     border: {
         color: 'rgba(176, 176, 176, 1)',
-        radius: '.4rem'
+        radius: '.4rem',
+        solid: '.1rem solid rgba(176, 176, 176, 1)'
     },
     // spacing: {
     //     marginButtonGroup: '1.6rem',
@@ -62,19 +71,25 @@ const commonTheme = {
     typography: {
         h1: {
             fontWeight: 400,
-            fontSize: '2.6rem',
+            fontSize: '3.6rem',
             lineHeight: 1.7,
             letterSpacing: 0
         },
         h2: {
             fontWeight: 500,
-            fontSize: '2.2rem',
+            fontSize: '3rem',
             lineHeight: 1.2,
             letterSpacing: '0.015rem'
         },
         h3: {
             fontWeight: 500,
-            fontSize: '2rem',
+            fontSize: '2.8rem',
+            lineHeight: 1.2,
+            letterSpacing: '0.015rem'
+        },
+        h4: {
+            fontWeight: 500,
+            fontSize: '2.2rem',
             lineHeight: 1.2,
             letterSpacing: '0.015rem'
         },
@@ -95,23 +110,15 @@ const commonTheme = {
             fontSize: '1.6rem',
             lineHeight: 1.16,
             letterSpacing: '0.125rem'
+        },
+        caption: {
+            fontWeight: 400,
+            fontSize: '1.2rem',
+            lineHeight: 1.14,
+            letterSpacing: '0.04rem'
         }
     },
-    space: [
-        '.4rem',
-        '.8rem',
-        '1rem',
-        '1.6rem',
-        '2rem',
-        '3rem',
-        '4rem',
-        '4.8rem',
-        '6rem',
-        '8rem',
-        '12rem',
-        '16rem',
-        '24rem'
-    ],
+    space: ['.8rem', '1.6rem', '2rem', '3.2rem', '4rem', '4.8rem', '6rem', '8rem', '12rem', '16rem', '24rem'],
     transitions: {
         easing: {
             easeInOut: '.3s cubic-bezier(0.4, 0, 0.2, 1) .3s',

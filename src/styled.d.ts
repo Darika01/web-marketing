@@ -1,5 +1,7 @@
 import 'styled-components';
+
 import { BreakpointsTYPE } from './locales/utils/themeConfig/breakpoints';
+
 interface IPalette {
     light: string;
     main: string;
@@ -35,22 +37,31 @@ declare module 'styled-components' {
                 disabled: string;
             };
             error: {
+                light: string;
                 main: string;
+                dark: string;
             };
             warning: {
+                light: string;
                 main: string;
+                dark: string;
             };
             info: {
+                light: string;
                 main: string;
+                dark: string;
             };
             success: {
+                light: string;
                 main: string;
+                dark: string;
             };
             grey: greyTYPE;
         };
         border: {
             color: string;
             radius: string;
+            solid: string;
         };
         duration: {
             durationFast: string;
@@ -76,6 +87,12 @@ declare module 'styled-components' {
                 lineHeight: number;
                 letterSpacing: string;
             };
+            h4: {
+                fontWeight: number;
+                fontSize: string;
+                lineHeight: number;
+                letterSpacing: string;
+            };
             body1: {
                 fontWeight: number;
                 fontSize: string;
@@ -89,6 +106,12 @@ declare module 'styled-components' {
                 letterSpacing: string;
             };
             button: {
+                fontWeight: number;
+                fontSize: string;
+                lineHeight: number;
+                letterSpacing: string;
+            };
+            caption: {
                 fontWeight: number;
                 fontSize: string;
                 lineHeight: number;

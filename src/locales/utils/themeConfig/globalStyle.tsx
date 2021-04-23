@@ -1,7 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
+import reset from 'styled-reset';
+
 import breakpoints from './breakpoints';
 import rootFonts from './rootFonts';
-import reset from 'styled-reset';
 
 const setRootFonts = () => {
     return Object.entries(breakpoints).map(([viewPortKey, viewPortValue]: [string, string]): string => {
@@ -29,6 +30,10 @@ const GlobalStyle = createGlobalStyle`
 			font-size: 1.6rem;
 			font-family: Roboto, sans-serif;
 			outline: none;
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			border-width: 0;
 		};
 		p {
 			color: ${({ theme }) => theme.palette.text.primary};
