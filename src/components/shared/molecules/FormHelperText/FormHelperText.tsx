@@ -14,6 +14,7 @@ type styleTYPE = {
 
 const HelperText = styled(Caption)`
     color: ${({ theme, error }: styleTYPE) => (error ? theme.palette.error.main : theme.palette.text.tertiary)};
+    margin-top: 0.8rem;
 `;
 
 const FormHelperText: React.FC<Props> = ({ error, children }) => {

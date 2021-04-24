@@ -1,6 +1,5 @@
 import ArrowTooltip from '../../ArrowTooltip/ArrowTooltip';
-import Loader from '../../Loader/Loader';
-import { StyledButton } from './styles';
+import { BtnIcon, BtnLoader, StyledButton } from './styles';
 
 interface RectangularButtonProps {
     color?: 'primary' | 'secondary' | 'error' | 'info' | 'success' | 'warning';
@@ -30,10 +29,7 @@ const RectangularButton: React.FC<RectangularButtonProps> = ({
     return (
         <ArrowTooltip title={text} disabled={loading || disabled}>
             <StyledButton
-                // className={classes[variant]}
                 onClick={handleClick}
-                // variant={variant}
-                // size={size}
                 fullWidth={fullWidth}
                 color={color}
                 type={type}
@@ -41,10 +37,10 @@ const RectangularButton: React.FC<RectangularButtonProps> = ({
                 {...rest}
             >
                 <>
-                    {text}
-                    {loading && <Loader />}
-                    {startIcon && startIcon}
-                    {endIcon && endIcon}
+                    {startIcon && <BtnIcon isStartIcon>{startIcon}</BtnIcon>}
+                    {text.toUpperCase()}
+                    {endIcon && <BtnIcon>{endIcon}</BtnIcon>}
+                    {loading && <BtnLoader color={color} />}
                 </>
             </StyledButton>
         </ArrowTooltip>

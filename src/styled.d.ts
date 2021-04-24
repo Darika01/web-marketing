@@ -1,6 +1,6 @@
 import 'styled-components';
 
-import { BreakpointsTYPE } from './locales/utils/themeConfig/breakpoints';
+import { BreakpointsTYPE } from './utils/themeConfig/breakpoints';
 
 interface IPalette {
     light: string;
@@ -28,6 +28,7 @@ declare module 'styled-components' {
                 primary: string;
                 secondary: string;
                 navbar: string;
+                disabled: string;
             };
             text: {
                 primary: string;

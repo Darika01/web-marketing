@@ -1,0 +1,65 @@
+{
+    "Name": "Nazwa",
+    "Password": "Hasło",
+    "Username": "Username",
+    "Signing in": "Logowanie",
+    "Sign in": "Zaloguj się",
+    "buttons": {
+        "Add": "Dodaj",
+        "Add entry": "Dodaj wpis",
+        "Add user": "Dodaj użytkownika",
+        "Back": "Wróć",
+        "Cancel": "Anuluj",
+        "Close": "Zamknij",
+        "Create": "Stwórz",
+        "Delete": "Usuń",
+        "Don't save": "Nie zapisuj",
+        "Edit": "Edytuj",
+        "Next": "Dalej",
+        "Reset": "Reset",
+        "Refresh": "Odśwież",
+        "Save": "Zapisz",
+        "Search": "Wyszukaj",
+        "Select": "Wybierz",
+        "Generate": "Wygeneruj",
+        "Accept": "Akceptuj",
+        "Correct": "Poprawnie",
+        "Withdraw": "Wycofaj",
+        "Select file": "Wybierz plik"
+    },
+    "info": {
+        "Incorrect value": "Niepoprawna wartość",
+        "Invalid date": "Zły format daty",
+        "Invalid": "Nieprawidłowy",
+        "None": "Brak",
+        "Required field": "Wymagane pole",
+        "Server error": "Błąd serwera",
+        "field is required": "jest wymagane"
+    },
+    "table": {
+        "Records": "Rekordy",
+        "Action": "Akcja",
+        "Options": "Opcje",
+        "actions": {
+            "Details": "Szczegóły",
+            "Edit": "Edycja",
+            "Withdraw": "Wycofaj",
+            "Accept": "Akceptuj",
+            "Download": "Pobierz",
+            "Delete": "Usuń"
+        },
+        "Rows": "Wiersze",
+        "Page": "Strona",
+        "First page": "Pierwsza strona",
+        "Previous page": "Poprzednia strona",
+        "Next page": "Następna strona",
+        "Last page": "Ostatnia strona"
+    },
+    "types": {
+        "None": "Brak",
+        "Info": "Info",
+        "Warning": "Ostrzeżenie",
+        "Error": "Błąd",
+        "Success": "Sukces"
+    }
+}

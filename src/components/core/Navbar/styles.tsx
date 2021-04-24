@@ -1,6 +1,6 @@
-import setIconSize from 'locales/utils/themeConfig/setIconSize';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components/macro';
+import setIconSize from 'utils/themeConfig/setIconSize';
 
 import { StyledIconBase } from '@styled-icons/styled-icon';
 

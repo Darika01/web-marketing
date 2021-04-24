@@ -1,4 +1,4 @@
-const darkTheme = {
+const lightTheme = {
     primary: {
         light: 'rgba(74, 232, 221, 1)',
         main: 'rgba(48, 206, 195, 1)',
@@ -17,7 +17,8 @@ const darkTheme = {
     bgr: {
         primary: 'rgba(248, 248, 248, 1)',
         secondary: 'rgba(37, 37, 37, 1)',
-        navbar: 'rgba(252, 64, 84, 1)'
+        navbar: 'rgba(252, 64, 84, 1)',
+        disabled: 'rgba(234, 234, 234, 1)'
     },
     text: {
         primary: 'rgba(12, 12, 12, 1)',
@@ -27,4 +28,4 @@ const darkTheme = {
         disabled: 'rgba(199, 199, 199, 1)'
     }
 };
-export default darkTheme;
+export default lightTheme;

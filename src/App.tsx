@@ -18,8 +18,8 @@ import styled, {
 import Login from './components/pages/Login/Login';
 import Loader from './components/shared/atoms/Loader/Loader';
 import { ThemeStateProvider, useThemeContext } from './context/themeStore';
-import GlobalStyle from './locales/utils/themeConfig/globalStyle';
-import commonTheme from './locales/utils/themeConfig/themes/commonTheme';
+import GlobalStyle from './utils/themeConfig/globalStyle';
+import commonTheme from './utils/themeConfig/themes/commonTheme';
 
 const Layout = styled.div`
     display: flex;
