@@ -1,7 +1,12 @@
-import React from 'react';
-import { createContext, useReducer, useContext } from 'react';
-import darkTheme from '../locales/utils/themeConfig/themes/darkTheme';
-import lightTheme from '../locales/utils/themeConfig/themes/lightTheme';
+import React, {
+	createContext,
+	useContext,
+	useReducer
+} from 'react';
+
+import darkTheme from 'utils/themeConfig/themes/darkTheme';
+import lightTheme from 'utils/themeConfig/themes/lightTheme';
+
 import { APPLY_THEME } from './actions';
 
 const isDarkTheme = localStorage.getItem('isDarkTheme');
@@ -47,4 +52,4 @@ const ThemeStateProvider: React.FC = ({ children }) => {
     return <Provider value={{ contextThemeState, dispatchThemeContext }}>{children}</Provider>;
 };
 
-export { themeStore, ThemeStateProvider, useThemeContext };
+export { ThemeStateProvider, themeStore, useThemeContext };

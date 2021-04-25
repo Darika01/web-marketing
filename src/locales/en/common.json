@@ -1,0 +1,66 @@
+{
+    "Username": "Username",
+    "Name": "Name",
+    "Password": "Password",
+    "Signing in": "Sign in",
+    "Sign in": "Sign in",
+    "Show password": "Show password",
+    "buttons": {
+        "Add": "Add",
+        "Add entry": "Add entry",
+        "Add user": "Add user",
+        "Back": "Back",
+        "Cancel": "Cancel",
+        "Close": "Close",
+        "Create": "Create",
+        "Delete": "Delete",
+        "Don't save": "Don't save",
+        "Edit": "Edit",
+        "Next": "Next",
+        "Reset": "Reset",
+        "Refresh": "Refresh",
+        "Save": "Save",
+        "Search": "Search",
+        "Select": "Select",
+        "Generate": "Generate",
+        "Accept": "Accept",
+        "Correct": "Correct",
+        "Withdraw": "Withdraw",
+        "Select file": "Select file"
+    },
+    "info": {
+        "Incorrect value": "Incorrect value",
+        "Invalid date": "Invalid date",
+        "Invalid": "Invalid",
+        "None": "None",
+        "Required field": "Required field",
+        "Server error": "Server error",
+        "field is required": "field is required"
+    },
+    "table": {
+        "Records": "Records",
+        "Action": "Action",
+        "Options": "Options",
+        "actions": {
+            "Details": "Details",
+            "Edit": "Edit",
+            "Withdraw": "Withdraw",
+            "Accept": "Accept",
+            "Download": "Download",
+            "Delete": "Delete"
+        },
+        "Rows": "Rows",
+        "Page": "Page",
+        "First page": "First page",
+        "Previous page": "Previous page",
+        "Next page": "Next page",
+        "Last page": "Last page"
+    },
+    "types": {
+        "None": "None",
+        "Info": "Info",
+        "Warning": "Warning",
+        "Error": "Error",
+        "Success": "Success"
+    }
+}

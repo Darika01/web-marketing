@@ -1,7 +1,6 @@
-import { DesignServices } from '@styled-icons/material-sharp';
-import { Home } from '@styled-icons/boxicons-regular';
-import { InfoCircle } from '@styled-icons/boxicons-regular';
+import { Home, InfoCircle } from '@styled-icons/boxicons-regular';
 import { ContactSupport } from '@styled-icons/material-outlined';
+import { DesignServices } from '@styled-icons/material-sharp';
 import { StyledIcon } from '@styled-icons/styled-icon';
 
 export type NavItemTYPE = {
