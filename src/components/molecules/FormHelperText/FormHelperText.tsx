@@ -1,4 +1,4 @@
-import { Caption } from 'components/shared/atoms/Typography/Typography';
+import { Caption } from 'components/atoms/Typography/Typography';
 import { DefaultTheme } from 'styled-components';
 import styled from 'styled-components/macro';
 

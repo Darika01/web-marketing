@@ -101,7 +101,7 @@ const commonTheme = {
         },
         body2: {
             fontWeight: 400,
-            fontSize: '2.2rem',
+            fontSize: '1.6rem',
             lineHeight: 1.6,
             letterSpacing: '0.01rem'
         },

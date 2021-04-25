@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
 
-import Navbar from 'components/core/Navbar/Navbar';
+import Loader from 'components/atoms/Loader/Loader';
 import Dashboard from 'components/pages/Dashboard/Dashboard';
+import Login from 'components/pages/Login/Login';
 import NotFound from 'components/pages/NotFound/NotFound';
+import LoginLayout from 'components/templates/LoginLayout/LoginLayout';
+import MainLayout from 'components/templates/MainLayout/MainLayout';
 import {
 	BrowserRouter as Router,
 	Redirect,
@@ -10,25 +13,11 @@ import {
 	Switch,
 	useLocation
 } from 'react-router-dom';
-import styled, {
-	DefaultTheme,
-	ThemeProvider
-} from 'styled-components';
+import { DefaultTheme, ThemeProvider } from 'styled-components';
 
-import Login from './components/pages/Login/Login';
-import Loader from './components/shared/atoms/Loader/Loader';
 import { ThemeStateProvider, useThemeContext } from './context/themeStore';
 import GlobalStyle from './utils/themeConfig/globalStyle';
 import commonTheme from './utils/themeConfig/themes/commonTheme';
-
-const Layout = styled.div`
-    display: flex;
-    min-height: 100vh;
-    width: 100%;
-    & > div:first-child {
-        width: 100%;
-    }
-`;
 
 const App: React.FC = () => {
     const { pathname } = useLocation();
@@ -38,26 +27,39 @@ const App: React.FC = () => {
 
     const theme: DefaultTheme = { ...commonTheme, palette: { ...commonTheme.palette, ...contextThemeState.theme } };
 
+    const isToken = Boolean(sessionStorage.getItem('token'));
+
     useEffect(() => {
-        setIsLoggedIn(Boolean(sessionStorage.getItem('token')));
-    }, []);
+        setIsLoggedIn(isToken);
+    }, [isToken]);
 
     return (
         <ThemeProvider theme={theme}>
             <GlobalStyle />
             {IsLoggedIn === null && <Loader />}
-            <Layout>
-                <Switch>
-                    <Redirect from="/:url*(/+)" to={pathname.slice(0, -1)} />
-                    <Route exact path="/login" component={Login} />
-                    {!IsLoggedIn && <Redirect to="/login" />}
-                    <div>
-                        <Navbar />
-                        <Route exact path="/" component={Dashboard} />
-                        <Route exact path="*" component={NotFound} />
-                    </div>
-                </Switch>
-            </Layout>
+            <Switch>
+                <Redirect from="/:url*(/+)" to={pathname.slice(0, -1)} />
+                <Route exact path="/login">
+                    {IsLoggedIn ? (
+                        <Redirect to="/" />
+                    ) : (
+                        <LoginLayout>
+                            <Login />
+                        </LoginLayout>
+                    )}
+                </Route>
+                {!IsLoggedIn && <Redirect to="/login" />}
+                <Route exact path="/">
+                    <MainLayout>
+                        <Dashboard />
+                    </MainLayout>
+                </Route>
+                <Route exact path="*">
+                    <MainLayout>
+                        <NotFound />
+                    </MainLayout>
+                </Route>
+            </Switch>
         </ThemeProvider>
     );
 };

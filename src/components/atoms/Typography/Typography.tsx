@@ -3,7 +3,7 @@ import styled from 'styled-components/macro';
 
 type TypographyVariantTYPE = 'h1' | 'h2' | 'h3' | 'h4' | 'body1' | 'body2' | 'caption';
 
-const setTypographyStyle = (theme: DefaultTheme, variant: TypographyVariantTYPE) => {
+export const setTypographyStyle = (theme: DefaultTheme, variant: TypographyVariantTYPE): string => {
     return `
         font-weight: ${theme.typography[variant].fontWeight};
         font-size: ${theme.typography[variant].fontSize};

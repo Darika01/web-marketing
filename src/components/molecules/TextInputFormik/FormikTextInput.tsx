@@ -1,14 +1,15 @@
+import { InputContainer } from 'components/atoms/StyledComponents';
 import { connect, FormikValues } from 'formik';
 import { useTranslation } from 'react-i18next';
 
-import FormHelperText from '../../FormHelperText/FormHelperText';
-import { InputContainer, StyledInput, StyledLabel } from './styles';
+import FormHelperText from '../FormHelperText/FormHelperText';
+import { StyledInput, StyledLabel } from './styles';
 
 type FormikInputProps = {
     name: string;
     label: string;
     disabled?: boolean;
-    type?: string;
+    type?: 'text' | 'password';
 } & FormikValues;
 
 const FormikTextInput: React.FC<FormikInputProps> = ({ formik, name, label, disabled, type = 'text' }) => {

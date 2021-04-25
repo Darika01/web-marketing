@@ -1,5 +1,5 @@
 import LoginBgr from 'assets/images/login-bgr.jpg';
-import { Body1, TitleH1, TitleH4 } from 'components/shared/atoms/Typography/Typography';
+import { Body1, TitleH1, TitleH4 } from 'components/atoms/Typography/Typography';
 import styled from 'styled-components/macro';
 
 export const Container = styled.div`
@@ -59,17 +59,19 @@ export const DataValue = styled(TitleH4)`
 `;
 export const RightSide = styled.div`
     flex: 1;
+    width: 100%;
     & > div {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-            margin: 0 ${({ theme }) => theme.space[6]};
-        }
+
+        margin: 0 auto;
+        max-width: 48rem;
+        padding: 0 ${({ theme }) => theme.space[2]};
     }
 `;
 
 export const FormTitle = styled(TitleH1)`
     color: ${({ theme }) => theme.palette.text.primary};
-    margin-bottom: 6rem;
+    margin-bottom: 4.8rem;
 `;

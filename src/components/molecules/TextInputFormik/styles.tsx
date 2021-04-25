@@ -1,4 +1,4 @@
-import { Body1 } from 'components/shared/atoms/Typography/Typography';
+import { Body1 } from 'components/atoms/Typography/Typography';
 import { Field } from 'formik';
 import styled from 'styled-components/macro';
 
@@ -7,12 +7,6 @@ type StyledInputTYPE = {
     disabled?: boolean;
 };
 
-export const InputContainer = styled.div`
-    margin-bottom: 2.8rem;
-    &:last-child {
-        margin-bottom: 4rem;
-    }
-`;
 export const StyledInput = styled(Field)<StyledInputTYPE>`
     width: 100%;
     border: 0.1rem solid ${({ theme, error }) => (error ? theme.palette.error.main : theme.palette.grey[400])};
@@ -27,5 +21,5 @@ export const StyledInput = styled(Field)<StyledInputTYPE>`
     }
 `;
 export const StyledLabel = styled(Body1)`
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.4rem;
 `;
