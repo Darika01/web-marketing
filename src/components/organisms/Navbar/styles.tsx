@@ -30,7 +30,7 @@ export const NavItem = styled.p`
     color: ${({ theme }) => theme.palette.grey[300]};
     display: flex;
     align-items: center;
-    padding: ${({ theme }) => theme.space[2]};
+    padding: ${({ theme }) => theme.space[1]};
     &:not(:last-child) {
         margin-right: ${({ theme }) => theme.space[2]};
     }

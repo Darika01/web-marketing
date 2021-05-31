@@ -29,6 +29,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:watch": "npm run test -- --watch",
+    "test:watchAll": "npm run test -- --watchAll",
+    "test:coverageChanged": "npm run test -- --collectCoverage --reporters=\"default\"",
+    "test:coverageAll": "npm run test:watchAll -- --collectCoverage --reporters=\"default\" --silent",
+    "test:ci": "CI=true npm run test -- -u --collectCoverage --reporters=\"default\" --silent",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
