@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import Loader from 'components/atoms/Loader/Loader';
+import About from 'components/pages/About/About';
 import Dashboard from 'components/pages/Dashboard/Dashboard';
 import Login from 'components/pages/Login/Login';
 import NotFound from 'components/pages/NotFound/NotFound';
@@ -36,30 +37,38 @@ const App: React.FC = () => {
     return (
         <ThemeProvider theme={theme}>
             <GlobalStyle />
-            {IsLoggedIn === null && <Loader />}
-            <Switch>
-                <Redirect from="/:url*(/+)" to={pathname.slice(0, -1)} />
-                <Route exact path="/login">
-                    {IsLoggedIn ? (
-                        <Redirect to="/" />
-                    ) : (
-                        <LoginLayout>
-                            <Login />
-                        </LoginLayout>
-                    )}
-                </Route>
-                {!IsLoggedIn && <Redirect to="/login" />}
-                <Route exact path="/">
-                    <MainLayout>
-                        <Dashboard />
-                    </MainLayout>
-                </Route>
-                <Route exact path="*">
-                    <MainLayout>
-                        <NotFound />
-                    </MainLayout>
-                </Route>
-            </Switch>
+            {IsLoggedIn === null ? (
+                <Loader />
+            ) : (
+                <Switch>
+                    <Redirect from="/:url*(/+)" to={pathname.slice(0, -1)} />
+                    <Route exact path="/login">
+                        {IsLoggedIn ? (
+                            <Redirect to="/" />
+                        ) : (
+                            <LoginLayout>
+                                <Login />
+                            </LoginLayout>
+                        )}
+                    </Route>
+                    {!IsLoggedIn && <Redirect to="/login" />}
+                    <Route exact path="/">
+                        <MainLayout>
+                            <Dashboard />
+                        </MainLayout>
+                    </Route>
+                    <Route exact path="/about">
+                        <MainLayout>
+                            <About />
+                        </MainLayout>
+                    </Route>
+                    <Route exact path="*">
+                        <MainLayout>
+                            <NotFound />
+                        </MainLayout>
+                    </Route>
+                </Switch>
+            )}
         </ThemeProvider>
     );
 };

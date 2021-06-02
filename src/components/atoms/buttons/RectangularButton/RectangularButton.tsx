@@ -1,8 +1,8 @@
 import ArrowTooltip from '../../ArrowTooltip/ArrowTooltip';
-import { BtnIcon, BtnLoader, StyledButton } from './styles';
+import { BtnIcon, BtnLoader, ColorTYPE, StyledButton } from './styles';
 
 interface RectangularButtonProps {
-    color?: 'primary' | 'secondary' | 'error' | 'info' | 'success' | 'warning';
+    color?: ColorTYPE;
     text: string;
     type?: 'button' | 'reset' | 'submit';
     disabled?: boolean;

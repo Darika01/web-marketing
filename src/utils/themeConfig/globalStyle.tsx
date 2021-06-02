@@ -24,11 +24,10 @@ const GlobalStyle = createGlobalStyle`
 	}
 	body {
 		height: 100%;
-		background-color: ${({ theme }) => theme.palette.bgr.primary};
 		overflow: inherit;
 		* {
 			font-size: 1.6rem;
-			font-family: Roboto, sans-serif;
+			font-family: 'Roboto Condensed', sans-serif;
 			outline: none;
 			box-sizing: border-box;
 			margin: 0;

@@ -1,6 +1,6 @@
 import RectangularButton from 'components/atoms/buttons/RectangularButton/RectangularButton';
-import FormikCheckbox from 'components/molecules/FormikCheckbox/FormikCheckbox';
-import FormikTextInput from 'components/molecules/TextInputFormik/FormikTextInput';
+import FormikCheckbox from 'components/molecules/Textfields/FormikCheckbox/FormikCheckbox';
+import FormikTextInput from 'components/molecules/Textfields/TextInputFormik/FormikTextInput';
 import { Form, Formik } from 'formik';
 import randtoken from 'rand-token';
 import { useHistory } from 'react-router';

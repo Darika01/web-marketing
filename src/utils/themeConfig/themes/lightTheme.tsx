@@ -15,13 +15,14 @@ const lightTheme = {
     // greyDark: 'rgba(92, 95, 106, 1)',
 
     bgr: {
-        primary: 'rgba(248, 248, 248, 1)',
-        secondary: 'rgba(37, 37, 37, 1)',
+        primary: 'rgba(255, 255, 255, 1)',
+        secondary: 'rgba(242, 240, 245, 1)',
         navbar: 'rgba(252, 64, 84, 1)',
         disabled: 'rgba(234, 234, 234, 1)'
     },
     text: {
         primary: 'rgba(12, 12, 12, 1)',
+        primaryMain: 'rgba(48, 206, 195, 1)',
         secondary: 'rgba(51, 51, 51, 1)',
         tertiary: 'rgba(153, 153, 153, 1)',
         quaternary: 'rgba(191, 191, 191, 1)',

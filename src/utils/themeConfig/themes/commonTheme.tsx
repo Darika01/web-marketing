@@ -76,7 +76,7 @@ const commonTheme = {
             letterSpacing: 0
         },
         h2: {
-            fontWeight: 500,
+            fontWeight: 600,
             fontSize: '3rem',
             lineHeight: 1.2,
             letterSpacing: '0.015rem'

@@ -2,7 +2,7 @@ import { InputContainer } from 'components/atoms/StyledComponents';
 import { connect, FormikValues } from 'formik';
 import { useTranslation } from 'react-i18next';
 
-import FormHelperText from '../FormHelperText/FormHelperText';
+import FormHelperText from '../../FormHelperText/FormHelperText';
 import { StyledInput, StyledLabel } from './styles';
 
 type FormikInputProps = {

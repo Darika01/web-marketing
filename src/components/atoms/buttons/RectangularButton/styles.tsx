@@ -3,8 +3,10 @@ import setIconSize from 'utils/themeConfig/setIconSize';
 
 import Loader from '../../Loader/Loader';
 
+export type ColorTYPE = 'primary' | 'secondary' | 'error' | 'info' | 'success' | 'warning';
+
 type StyledButtonTYPE = {
-    color: 'primary' | 'secondary' | 'error' | 'info' | 'success' | 'warning';
+    color: ColorTYPE;
     fullWidth?: boolean;
     disabled?: boolean;
 };

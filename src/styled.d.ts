@@ -32,6 +32,7 @@ declare module 'styled-components' {
             };
             text: {
                 primary: string;
+                primaryMain: string;
                 secondary: string;
                 tertiary: string;
                 quaternary: string;

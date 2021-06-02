@@ -22,6 +22,7 @@ const darkTheme = {
     },
     text: {
         primary: 'rgba(12, 12, 12, 1)',
+        primaryMain: 'rgba(48, 206, 195, 1)',
         secondary: 'rgba(51, 51, 51, 1)',
         tertiary: 'rgba(153, 153, 153, 1)',
         quaternary: 'rgba(191, 191, 191, 1)',
